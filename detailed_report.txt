@@ -1,0 +1,39 @@
+Baseline Model Detailed Evaluation
+==================================
+
+              precision    recall  f1-score   support
+
+     sadness       0.93      0.86      0.89       581
+         joy       0.90      0.86      0.88       695
+        love       0.70      0.90      0.79       159
+       anger       0.85      0.87      0.86       275
+        fear       0.86      0.83      0.84       224
+    surprise       0.60      0.83      0.70        66
+
+    accuracy                           0.86      2000
+   macro avg       0.81      0.86      0.83      2000
+weighted avg       0.87      0.86      0.86      2000
+
+
+Top 20 Misclassified Samples (Sorted by Confidence):
+                                                                                                                                                                   text label_name predicted_name  confidence
+1154                                                                                                                                       i feel that passionate about        joy           love    0.920619
+262                                                                                   i realized what i am passionate about helping women feel accepted and appreciated        joy           love    0.879304
+576                                                                                     i feel accepted and loved by a community of derby girls that i helped to create        joy           love    0.812555
+877                                                                                i feel respected and secure where i can journey toward loving and be loved in return        joy           love    0.776912
+1003                                                                                                             i started walking again yesterday and it feels amazing        joy       surprise    0.776734
+1842                                                                                                                                        i feel so amazing musicjuzz        joy       surprise    0.757276
+637                                                                                            i feel so blessed to be married to him because he loves his stepchildren        joy           love    0.752306
+867                                                                                                                        i was truly surprised and feel quite honored        joy       surprise    0.742139
+1461                                                                                                                                      im feeling generous this week        joy           love    0.742095
+336                                                                                                                                                  i do feel stressed    sadness          anger    0.702841
+832                                                                                                                                 i think and it feels a little weird       fear       surprise    0.699974
+1360                                                                                        i have a family i can feel passionate about and completely comfortable with        joy           love    0.697585
+353                                                                                                      i could feel his breath on me and smell the sweet scent of him        joy           love    0.694598
+917                                                                         i feel the need to pimp this since raini my beloved rocky casting director loves it so much        joy           love    0.692896
+1887                                     i feel like some of you have pains and you cannot imagine becoming passionate about the group or the idea that is causing pain        joy           love    0.690997
+1381                                                                                                                    i was like should i feel sweet or feel offended       love          anger    0.667755
+1943  i didn t mean to get angry with you bommie i just can t control my feelings hellip i just hated myself why i am like this the dara who can t get over with that b    sadness          anger    0.667714
+759                                                                                                  i feel very strongly about supporting charities that help children        joy           love    0.662795
+415                                                                      i loved the feeling i got during an amazing slalom run whether it was in training or in a race        joy       surprise    0.651087
+688                                                                                                                                             i feel hated in cempaka    sadness          anger    0.651017
