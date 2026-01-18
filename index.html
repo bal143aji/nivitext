@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SensiText | Emotion Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1 class="logo">Sensi<span>Text</span></h1>
+            <p class="subtitle">Advanced Textual Emotion Recognition</p>
+        </header>
+
+        <section class="card glass">
+            <div class="input-group">
+                <label for="text-input">Enter your text</label>
+                <textarea id="text-input" placeholder="How are you feeling today? (e.g., 'The sunset was breathtakingly beautiful')"></textarea>
+            </div>
+
+            <button id="analyze-btn" class="primary-btn">
+                <span class="btn-text">Analyze Emotion</span>
+                <span class="loader"></span>
+            </button>
+        </section>
+
+        <section id="result-section" class="result-container hidden">
+            <div class="top-result card glass">
+                <div class="emotion-header">
+                    <span id="emotion-emoji" class="emoji">✨</span>
+                    <div class="emotion-meta">
+                        <h2 id="predicted-emotion">Analyzing...</h2>
+                        <p>Dominant Emotion detected with <span id="confidence-val">0%</span> confidence</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detailed-results card glass">
+                <h3>Emotion Breakdown</h3>
+                <div id="prob-bars" class="prob-list">
+                    <!-- Bars will be injected here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
